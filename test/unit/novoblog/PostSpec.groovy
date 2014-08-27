@@ -8,7 +8,6 @@ import spock.lang.Specification
  * See the API for {@link grails.test.mixin.support.GrailsUnitTestMixin} for usage instructions
  */
 @TestMixin(GrailsUnitTestMixin)
-@TestFor(Post)
 class PostSpec extends Specification {
 
     def setup() {

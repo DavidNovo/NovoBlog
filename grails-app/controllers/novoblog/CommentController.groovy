@@ -1,7 +1,6 @@
 package novoblog
 
-class PostController {
-
+class CommentController {
 def scaffold = true
 
     def index() { }
