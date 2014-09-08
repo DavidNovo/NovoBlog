@@ -101,4 +101,18 @@ class PostController {
             '*'{ render status: NOT_FOUND }
         }
     }
+
+// to access this method:
+// http://localhost:8080/NovoBlog/post/postBlog?name=Samantha
+    def postBlog() {
+        def response = [:]
+        response.name = params.name
+        response.lastname = null
+
+        withFormat {
+            json {
+                render response 
+            }
+        }
+    }
 }
