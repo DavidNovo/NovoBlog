@@ -1,5 +1,9 @@
 package novoblog
 
+import grails.rest.*
+
+@Resource(uri='/posts' formats=['json', 'xml')  
+// with the resource annotation, a view is not returned, an xml document is returned
 class Post {
 
 
